@@ -12,7 +12,7 @@ var connection = mysql.createConnection({
 	database: "bamazon"
 });
 //connect to the mysql server and sql database
-connection.connect(function(error) {
+connection.connect(function (error) {
 	if (error) {
 		throw error;
 	}
@@ -53,6 +53,7 @@ function buyProduct() {
 			//looks through the products table in the sql databse
 			connection.query("SELECT * FROM products",
 			function (error, results) {
+				//console.log(results);
 				if (error) {
 					throw error;
 				}
@@ -65,10 +66,10 @@ function buyProduct() {
 					console.log("This cost a total of " + answer.howMany * results[answer.whichProduct -1].price + " dollars.");
 					console.log("---------------");
 					//update the sql database to subtract number of items just purchased by user
-					connection.query("UPDATE products SET ? WHERE ?", 
+					connection.query("UPDATE products SET ? WHERE ?",
 						[
 							{	//will subtract number of tiems purchased from the amount available in stock
-								stock_quantity: results[answer.whichProduct].stock_quantity - answer.howMany
+								stock_quantity: parseInt(results[answer.whichProduct - 1].stock_quantity) - parseInt(answer.howMany)
 							},
 							{	//targets the product that was purchased
 								item_id: answer.whichProduct
@@ -80,7 +81,7 @@ function buyProduct() {
 							}
 							//a good old way to make this feel more realistic
 							console.log("All sales are final.");
-							console.log("-----------");
+							console.log("-------------");
 						}
 					);
 					//ends the connection to the database
