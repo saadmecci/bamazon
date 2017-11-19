@@ -6,7 +6,7 @@ The application uses the **inquirer, mysql, and console.table** npm packages.
 
 There are 2 ways to interact with the store: **1) Customer View** or **2) Manager View**.
 
-## bamazon Customer View
+## 1) bamazon Customer View
 
 When the bamazonCustomer.js file is run, the products and their price appear in a table format.
 
@@ -16,7 +16,7 @@ The customer is then notified of the total cost, the stock of the item in the SQ
 
 <img src="assets/images/customerView.png" alt="Customer View of bamazon">
 
-## bamazon Manager View
+## 2) bamazon Manager View
 
 The manager can view all items, items with low inventory, can add stock to low inventory items, and can add brand new items.
 
