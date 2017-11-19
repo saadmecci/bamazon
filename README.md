@@ -16,7 +16,7 @@ The customer is then notified of the total cost, the stock of the item in the SQ
 
 <img src="assets/images/customerView.png" alt="Customer View of bamazon">
 
-##bamazon Manager View
+## bamazon Manager View
 
 The manager can view all items, items with low inventory, can add stock to low inventory items, and can add brand new items.
 
