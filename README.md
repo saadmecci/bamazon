@@ -32,6 +32,10 @@ Selecting **Add to Inventory** will list the products available in the store.
 
 <img src="assets/images/managerOption3Part1.png" alt="Manager View of bamazon option3">
 
-Once a product has been a selected, manager will be prompted to enter how much stock they would like to add to that item. In the images below, Recliners are selected and their amount increased by 40.
+Once a product has been a selected, manager will be prompted to enter how much stock they would like to add to that item. In the image below, Recliners are selected and their amount increased by 40.
 
 <img src="assets/images/managerOption3.png" alt="Manager View of bamazon option3">
+
+FInally the manager can also **Add New Products**. Selecting this option will prompt the application to ask a few questions and then the store will be updated with that new item.
+
+<img src="assets/images/managerOption4.png" alt="Manager View of bamazon option4">
