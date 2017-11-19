@@ -28,3 +28,10 @@ Selecting **View Low Inventory** will only display those items whose stock_quant
 
 <img src="assets/images/managerFirstTwo.png" alt="Manager View of bamazon first 2 options">
 
+Selecting **Add to Inventory** will list the products available in the store. 
+
+<img src="assets/images/Option3Part1.png" alt="Manager View of bamazon option3">
+
+Once a product has been a selected, manager will be prompted to enter how much stock they would like to add to that item. In the images below, Recliners are selected and their amount increased by 40.
+
+<img src="assets/images/Option3.png" alt="Manager View of bamazon option3">
